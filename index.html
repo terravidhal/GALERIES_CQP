@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Gallery</h1>
+        <div class="filters">
+            <h2>Filter Images</h2>
+            
+            <div class="filter-section">
+                <h3>By Color</h3>
+                <div class="filter-buttons" id="colorFilters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="blue">Blue</button>
+                    <button class="filter-btn" data-filter="green">Green</button>
+                    <button class="filter-btn" data-filter="gray">Gray</button>
+                    <button class="filter-btn" data-filter="brown">Brown</button>
+                    <button class="filter-btn" data-filter="white">White</button>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h3>By Size</h3>
+                <div class="filter-buttons" id="sizeFilters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="small">Small</button>
+                    <button class="filter-btn" data-filter="medium">Medium</button>
+                    <button class="filter-btn" data-filter="large">Large</button>
+                </div>
+            </div>
+
+            <div class="filter-section">
+                <h3>By Date</h3>
+                <div class="filter-buttons" id="dateFilters">
+                    <button class="filter-btn" data-sort="newest">Newest First</button>
+                    <button class="filter-btn" data-sort="oldest">Oldest First</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="gallery" id="gallery">
+            <!-- Images  -->
+        </div>
+    </div>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
